@@ -25,13 +25,15 @@ De ahora en adelante se hará uso de los ficheros worksheet por lo que cuando se
 Sintaxis del condicional if:
 
 ```
-if (\<condicion\>){
-    \<bloque de codigo\> 
+if (<condicion>){
+    <bloque de codigo> 
 }
 else{
-    \<bloque de codigo\>
+    <bloque de codigo>
 }
 ```
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala/main/condicionales/image/simple_if.png)
+
+
 
