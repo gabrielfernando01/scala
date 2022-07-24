@@ -41,5 +41,19 @@ Para asignarle el lanzador, debes entrar a <code>setting</code> y eligen <code>D
 
 ## Pluggin para Scala y SBT Ejecutor
 
-Entra a <code>settings</code> posteriormente a <code>Pluggins</code> es decir, Settting > Pluggins. Ahí se instalan tanto el puggin de Scala como el interprete SBT Ejecutor.
+Entra a <code>settings</code> posteriormente a <code>Pluggins</code>, es decir, Settting > Pluggins. Ahí se instalan tanto el puggin de Scala como el interprete SBT Ejecutor.
+
+### Configurar y hacer nuestro primer «Hello world!».
+
+Abrimos Intelliji IDEA damos clic a File > New Project > Scala > SBT:
+
+![](https://raw.githubusercontent.com/gabrielfernando01/scala/main/image/sbt.png)
+
+En el directorio <code>src</code> damos clic derecho y elegimos <code>Scala Class</code>, y le damos de tipo <code>object</code>
+
+![](https://raw.githubusercontent.com/gabrielfernando01/scala/main/image/object.png)
+
+Como mi objeto no nombre <code>HelloWorl</code> en la Configuración elijo como Main Class: HelloWorld
+
+![](https://raw.githubusercontent.com/gabrielfernando01/scala/main/image/main.png)
 
