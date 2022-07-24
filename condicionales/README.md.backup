@@ -18,3 +18,18 @@ object Hola Scala{
 }
 ```
 
+## El condicional IF en Scala
+
+De ahora en adelante se hará uso de los ficheros worksheet por lo que cuando sea necesario se harán las respectivas capturas de pantalla o se capturara el código:
+
+Sintaxis del condicional if:
+
+```
+if (\<condicion\>){
+    \<bloque de codigo\> 
+}
+else{
+    \<bloque de codigo\>
+}
+```
+
