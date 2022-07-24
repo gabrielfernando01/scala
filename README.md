@@ -61,5 +61,5 @@ Como mi objeto no nombre <code>HelloWorl</code> en la Configuración elijo como 
 
 El pluggin de Scala nos ofrece los Scala Worksheets, para mostrar su funcionalidad en el directorio <code>src</code> damos clic derecho y elegimos <code>New > Scala Worksheet</code> en Name Worksheet encribimos el nombre de nuestro <code>fichero.sc</code>
 
-![](https://raw.githubusercontent.com/gabrielfernando01/scala/main/image/main.png)
+![](https://raw.githubusercontent.com/gabrielfernando01/scala/main/image/worksheet.png)
 
