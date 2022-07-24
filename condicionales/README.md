@@ -35,5 +35,14 @@ else{
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala/main/condicionales/image/simple_if.png)
 
+Ejemplo <code>condicional.scala</code>:
+
+```
+val k = 10
+
+println(if (k == 10) "k vale 10" else "k no vale 10")
+```
+
+#### Un caso sencillo de MATCH
 
 
