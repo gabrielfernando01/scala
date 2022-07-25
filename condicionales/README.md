@@ -48,3 +48,53 @@ println(if (k == 10) "k vale 10" else "k no vale 10")
 Los ejemplos los revisamos en el fichero <code>condicional.scala</code>. 
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala/main/condicionales/image/match.png)
+
+### El bucle «while»
+
+La sintaxis es la siguiente:
+
+```
+while (<condicion>){
+    <bloque de codigo>
+}
+```
+
+Es decir la condición por defecto es verdadera, mientras siga siendo verdadera ejecutara el bloque de código.
+
+**Bucle «do-while»**
+
+### El sistema de tipos
+
+Recordemos los tipos de variable:
+
+```
+1		//Int = 1
+1L		//Long = 1
+4.0		//Double = 4.0
+4.0f		//Float = 4.0
+true		//Boolean = true
+'c'		//Char = c
+```
+
+**El objeto <code>AnyVal</code>**
+
+Tipos de <code>AnyVal</code>: <code>Int</code>, <code>Long</code>, <code>Double</code>, <code>Short</code>, <code>Char</code>, <code>Boolean</code>, <code>Unit</code>. Existe otro tipo llamado <code>AnyRef</code>.
+
+### Colecciones
+
+Veamos la diferencia de una clase en Java contra una en Scala:
+
+![](https://raw.githubusercontent.com/gabrielfernando01/scala/main/condicionales/image/versus.png)
+
+Este tema solo se comenta por que aún no hemos formalizado la parte de Listas, ArrayList, etc. Por ahora se comparte la imagen de la jerarquía para el tipo de dato <code>Any</code>.
+
+![](https://raw.githubusercontent.com/gabrielfernando01/scala/main/condicionales/image/hierarchy.png)
+
+### Funciones básicas de una colección
+
+```
+val frutas = Array("apple", "banana", "pear")
+
+frutas.apply(0)
+frutas(1)
+```

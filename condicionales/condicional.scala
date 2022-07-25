@@ -41,3 +41,58 @@ mes match{
   case 12 => "Dicember"
   case _=> "None"
 }
+
+//========================================================================
+//Bucle while
+var k = 0
+while (k < 12){
+  println(s"k vale : ${k}, el siguiente es ${k + 1}" )
+  k=k+1
+}
+
+//==========================================================================
+//Bucle do-while
+var k = 20
+
+do{
+  println(s"k vale ${k}")
+  k = k + 1 
+} while(k < 20)
+
+//============================================================================
+//El sistema de tipos
+/*
+ * ANY
+ * AnyVal: Int, Long, Double, Float, Byte, Short, Char, Boolean, Unit
+ * AnyRef: 
+ * */
+/*
+ *Null
+ *Nothing
+ */
+
+//===============================================================================
+//Colecciones
+//Inmutables
+//Mutables
+//Importar paquetes para objetos mutables
+import scala.collection.mutable
+
+/*
+ *        Traversable
+ *            |
+ *          Iterable
+ *    ---------------------------
+ *    Set         Map        Seq
+ *                            |
+ *                  -------------------------
+ *                  IndexSeq        LinearSeq
+ */
+
+//================================================================================
+//Funciones básicas de una colección
+val frutas = Array("melon", "sandia", "naranja", "pera", "apple")
+val frutas = Array(true, 4)
+
+frutas.apply(0)
+frutas(1)
