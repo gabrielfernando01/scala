@@ -88,7 +88,7 @@ Veamos la diferencia de una clase en Java contra una en Scala:
 
 Este tema solo se comenta por que aún no hemos formalizado la parte de Listas, ArrayList, etc. Por ahora se comparte la imagen de la jerarquía para el tipo de dato <code>Any</code>.
 
-![](https://raw.githubusercontent.com/gabrielfernando01/scala/main/condicionales/image/hierarchy.png)
+![](https://raw.githubusercontent.com/gabrielfernando01/scala/main/condicionales/image/hierarchy,png)
 
 ### Funciones básicas de una colección
 
