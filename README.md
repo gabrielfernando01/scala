@@ -5,7 +5,7 @@
 Este repositorio trata de los primeros pasos en Scala, los ejemplos que se exponen tienen como recursos.
 
 - Scala 2.13.4
-- Itelliji IDEA
+- Itellij IDEA
 - Pluggin Scala y SBT Ejecutor
 - Ubuntu 20.04
 
@@ -18,7 +18,7 @@ $ sudo apt install scala
 $ scala -version
 ```
 
-## Instalación de Intelliji IDEA
+## Instalación de Intellij IDEA
 
 En el terminal ingresamos:
 
@@ -34,7 +34,7 @@ Cambiamos de directorio para ejecutar el script:
 
 ```
 $ cd /opt/idea/ideIC-*/bin
-prompt:/opt/idea/bin $ sh idea.sh 
+prompt:/opt/idea/bin$ sh idea.sh 
 ```
 
 Para asignarle el lanzador, debes entrar a <code>setting</code> y eligen <code>Desktop entry</code>.
@@ -45,7 +45,7 @@ Entra a <code>settings</code> posteriormente a <code>Pluggins</code>, es decir, 
 
 ### Configurar y hacer nuestro primer «Hello world!».
 
-Abrimos Intelliji IDEA damos clic a File > New Project > Scala > SBT:
+Abrimos Intelliji IDEA damos clic a <code>File > New Project > Scala > SBT</code>:
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala/main/image/sbt.png)
 
@@ -53,7 +53,7 @@ En el directorio <code>src</code> damos clic derecho y elegimos <code>Scala Clas
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala/main/image/object.png)
 
-Como mi objeto no nombre <code>HelloWorl</code> en la Configuración elijo como Main Class: HelloWorld
+Como mi Clase objeto es <code>HelloWorld</code> en la Configuración elijo como Main Class: HelloWorld
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala/main/image/main.png)
 
