@@ -45,4 +45,6 @@ println(if (k == 10) "k vale 10" else "k no vale 10")
 
 #### Un caso sencillo de MATCH
 
+Los ejemplos los revisamos en el fichero <code>condicional.scala</code>. 
 
+![](https://raw.githubusercontent.com/gabrielfernando01/scala/main/condicionales/image/match.png)

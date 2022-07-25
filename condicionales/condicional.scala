@@ -23,3 +23,21 @@ def kVal10(): String = if (k == 10) "k vale 10" else "k no vale 10"
 kVal10()
 
 //=====================================================================
+//Un caso sencillo de Match
+val mes = 6
+
+mes match{
+  case 1 => "Enero"
+  case 2 =>  "Febrero"
+  case 3 => "Marzo"
+  case 4 => "Abril"
+  case 5 => "Mayo"
+  case 6 => "June"
+  case 7 => "July"
+  case 8 => "Agost"
+  case 9 => "September"
+  case 10 => "October"
+  case 11 => "November"
+  case 12 => "Dicember"
+  case _=> "None"
+}
