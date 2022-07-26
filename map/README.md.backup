@@ -41,3 +41,5 @@ val coches = List("BMW", "Nissan", "Toyota", "Mercedes", "Audi", "SEAT", "VW")
 coches.flatMap { x => x.toUpperCase()}.distinct
 ```
 
+## Sets. Parte 1
+
