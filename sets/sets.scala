@@ -61,5 +61,18 @@ val set = Set(1,2,3,4,5,6)
 val mayorAMenor = Ordering.fromLessThan[Int](_>_)
 val sortedSetInverso = immutable.SortedSet.empty(MayorAMenor) ++ set
 
+//=============================================================
+//Creando mapas
+// Claves <- A
+// Claves <- B
+// (CLAVES -> VALOR)
+
+//Int -> String
+//String -> Int
+//String -> String
+//String -> Libros
+
+//===============================================================
+val mapa = Map(1 -> "Jose", 2 -> "Raul", 3 -> "Laura", 4 -> "Monserrat", 5 -> "Rebeca")
 
 

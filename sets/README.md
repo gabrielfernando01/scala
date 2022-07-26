@@ -59,7 +59,7 @@ import scala.collection.immutable
 
 val set = Set(1,2,3,4,5,6)
 
-val mayorAMenor = Ordering.fromLessThan[Int]( \_>\_)
+val mayorAMenor = Ordering.fromLessThan[Int]( _>_)
 val sortedSetInverso = immutable.SortedSet.empty(mayorAMenor) ++ set
 ```
 
@@ -70,4 +70,13 @@ val sortedSetInverso = immutable.SortedSet.empty(mayorAMenor) ++ set
 - Java: HashMap, Map
 - Python: Diccionarios
 - Ruby: Hashes
+
+Vamos a tener:
+
+```
+// Claves <- A
+// Valores <- B
+// (CLAVE -> VALOR)
+```
+
 
