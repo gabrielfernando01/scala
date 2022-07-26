@@ -38,7 +38,7 @@ Sabemos que un String es una cadena de caracteres, es decir, podemos pensar en e
 ```
 val coches = List("BMW", "Nissan", "Toyota", "Mercedes", "Audi", "SEAT", "VW")
 
-coches.flatMap { x => x.toUpperCase()}.distinct
+coches.flatMap { x => x.toUpperCase() }.distinct
 ```
 
 
