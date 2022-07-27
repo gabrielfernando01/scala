@@ -1,11 +1,11 @@
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala/main/sets/image/header.png)
 
-# Set
+# Clase Set
 
 ***  
 <code>Set</code>s are <code>Iterable</code>s that contain no duplicate elements. The operations on sets are summarized in the following table for general sets and in the table after that for mutable sets. They fall into the following categories:
 
-- **Test** <code>contains</code>, <code>apply</code>, <code>subsetOf</code>. The <code>contains</code> method asks wheter a set contains a given element. The <apply> method for a set is same as <code>contains<code>, so <code>set(elem)</code> is the same as <code>set contains elem</code>. That means sets can also be used as test function thta return tru fo the elements they contain.
+- **Test** <code>contains</code>, <code>apply</code>, <code>subsetOf</code>. The <code>contains</code> method asks wheter a set contains a given element. The <apply> method for a set is same as <code>contains</code>, so <code>set(elem)</code> is the same as <code>set contains elem</code>. That means sets can also be used as test function thta return tru fo the elements they contain.
 
 For example:
 
