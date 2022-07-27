@@ -123,4 +123,7 @@ mapa(3) = "Cassandre"
 mapa
 
 //eliminar en Mapas mutables
+val mapa = Map(1 -< "Canada", 2 -> "Ukrania")
 
+mapa -= 2
+mapa.clear

@@ -1,6 +1,40 @@
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala/main/sets/image/header.png)
 
 # Set
+
+***  
+<code>Set</code>s are <code>Iterable</code>s that contain no duplicate elements. The operations on sets are summarized in the following table for general sets and in the table after that for mutable sets. They fall into the following categories:
+
+- **Test** <code>contains</code>, <code>apply</code>, <code>subsetOf</code>. The <code>contains</code> method asks wheter a set contains a given element. The <apply> method for a set is same as <code>contains<code>, so <code>set(elem)</code> is the same as <code>set contains elem</code>. That means sets can also be used as test function thta return tru fo the elements they contain.
+
+For example:
+
+```
+val fruit = Set("apple", "orange", "peach", "banana")
+fruit("peach")
+fruit("potatoe")
+```
+
+![](https://raw.githubusercontent.com/gabrielfernando01/scala/main/sets/image/hierarchy.png)
+
+- **Addition** <code>+</code> and <code>++</code>, which add one or more elements to a set, yielding a new set.
+- **Removals** <code>-</code>, <code>--</code>, which remove one or more elements from a set, yielding a new set.
+- **Set operation** for union, intersection, and set difference. Each of these operation exits in two forms: alphabetic and symbolic. The alphabetic version are <code>intersect</code>, <code>union</code>, <code>diff</code>, whereas the symbolic version are <code>&</code>, <code>|</code>, and <code>&~</code>. Infact, the <code>++</code> that <code>Set</code> inherits from <code>Iterable</code> can be seen as yet another alias of <code>union</code> or <code>|</code>, except that <code>++</code> takes an <code>IterableOnce</code> argument whereas <code>union</code> and <code>|</code> take sets.
+
+#### Operations in Class Set
+
+**WHAT IT IS** 			**WHAT IT DOES**
+
+**Test:**
+
+<code>xs contains x</code>	//Tests wheter <code>x</code> is an element of <code>xs</code>.
+
+<code>xs(x)</code>			//Same as <code>xs contains x</code>.
+
+<code>xs subset ys</code>	//Test whether <code>xs</code> is a subset of <code>ys</code>.
+
+***
+
 ## Sets. Parte 1.
 
 Los set son otro tipo de contenedores que aceptan operadores lógicos:
