@@ -70,9 +70,57 @@ val sortedSetInverso = immutable.SortedSet.empty(MayorAMenor) ++ set
 //Int -> String
 //String -> Int
 //String -> String
-//String -> Libros
+//String -> ClasePropia
 
-//===============================================================
+//======================================================================
+//mapas inmutables
 val mapa = Map(1 -> "Jose", 2 -> "Raul", 3 -> "Laura", 4 -> "Monserrat", 5 -> "Rebeca")
+mapa.keySet     //las claves no se pueden repetir
+mapa.values     //los valores si se pueden repetir
 
+mapa.get(2)
+mapa(5)
+
+mapa.getOrElse(9, "No existe")
+mapa.getoOrElse(11, null)
+
+mapa.contains(9)
+
+//======================================================================
+//Mapas. Parte 2
+val mapa = Map(1 -> "Jose", 2 -> "Raul")
+
+//incorporar elementos a la clase Map
+mapa + (3 -> "Paola", 4 -> "Cassandre")
+
+//eliminar duplas en Map
+val map = Map(1 -> "Francisca" 2 -> "Soledad" 3 -> "Marisol")
+
+map - 3
+
+//concatenar en Map
+val map1 = Map(1 -> "Mercedes", 2 -> "Toyota", 3 -> "Audi")
+val map2 = Map(3 -> "BMW", 4 -> "VW", 5 -> "Nissan", 6 -> "Ferrari")
+
+map1 ++ map 2
+
+//=======================================================================
+//mutable map
+import scala.collection.mutable
+
+val mapa = mutable.Map(1 -> "Renault", 2 -> "BMW")
+
+mapa += (3 -> "Cavalier")
+
+//también se puede escribir:
+val mapa = mutable.Map(1 -> "Toyota", 2 -> "Mercedes")
+mapa.put(2, "Ferrari")
+mapa
+
+//una forma economica de escribirlo
+val mapa = Map(1 -> "Marisol", 2 -> "Paola")
+mapa(3) = "Cassandre"
+mapa
+
+//eliminar en Mapas mutables
 

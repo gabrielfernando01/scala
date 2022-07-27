@@ -79,4 +79,30 @@ Vamos a tener:
 // (CLAVE -> VALOR)
 ```
 
+Los ejemplos sobre la clase <code>Map</code> se ve en el fichero <code>sets.scala</code>.
+
+## Mapas operaciones
+
+Agregar elementos a <code>Map</code>:
+
+```
+val mapa = Map(1 -> "Luis", 2 -> "Marisol")
+map + (3 -> "Andrés", 4 -> "Cassandre")
+```
+
+Eliminar elementos:
+
+```
+val mapa = Map(1 -> "Marisol", 2 -> "Karla", 3 -> "Paola")
+mapa - 3
+```
+
+Concatenar dos mapas:
+
+```
+val map1 = Map(1 -> "Mercedes", 2 -> "Toyota", 3 -> "Audi")
+val map2 = Map(3 -> "BMW", 4 -> "VW", 5 -> "Nissan", 6 -> "Ferrari")
+
+map1 ++ map 2
+```
 
