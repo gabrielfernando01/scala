@@ -63,3 +63,13 @@ El pluggin de Scala nos ofrece los Scala Worksheets, para mostrar su funcionalid
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala/main/image/worksheet.png)
 
+***
+### Introduction
+
+**Example:** Here's one line of code that demostrates many of the advantages of Scala's collections.
+
+```
+val (miniors, adults) = people partition (_.age < 18)
+```
+
+It's immediately clear what this operation does: It partitions a collection of <code>people</code> into <code>miniors</code> and <code>adults</code> depending on their age. Because the <code>partition</code> method is defined in the root collection tye <code>TraversableLike</code>, this code works for any kind of collection, including arrays. The resulting <code>miniors</code> and <code>adults</code> collection will be of the same type as the <code>people</code> collection.
