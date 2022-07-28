@@ -25,3 +25,16 @@ object Hello extends App {
 }
 ```
 
+After you save that code to a file named _Hello.scala_, you can compile with <code>scalac<code>:
+
+```
+$ scalac Hello.scala
+```
+
+If you're comming to to Scala from Java, <code>scalac</code> is just like <code>javac</code>, and that command creates two files:
+
+```
+$ scala Hello
+```
+
+## The Scala REPL
