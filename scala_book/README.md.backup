@@ -119,3 +119,182 @@ However, unlike Java and many other languages, hte if/else construct returns a v
 val x = if (a < b) a else b
 ```
 
+**match expressions**
+
+Scala has a <code>match</code> expression, which its most basic use is like a Java <code>switch</code> statement:
+
+```
+val result = i match {
+    case 1 => "one"
+    case 2 => "two"
+    case _ => "not 1 or 2"
+}
+```
+
+The <code>match</code> expression isn't limited to just integers, it can be used with any data type, include booleans:
+
+```
+val booleanAsString = bool match {
+    case true => "true"
+    case false => "false"
+}
+```
+
+Here's an examples of <code>match</code> being used as the body of a method, and matching against many different types:
+
+```
+def getClassAsString(x: Any): String = x match {
+    case s: String => s + " is a String"
+    case i: Int => "Int"
+    case f: float => "Float"
+    case p: Person => "Person"
+    case _ => "Unknown"
+}
+```
+
+Powerful match expression are a big feature of Scala, and we share more examples of it later in this book.
+
+**try/catch**
+
+Scala's try/catch control structure lets you catch exceptions. It's similar to Java, but its syntax is consistent with match expressions:
+
+```
+try {
+    writeToFile(text)
+} catch {
+    case fnfe: FileNotFoundException => println(fnfe)
+    case ioe: IOException => println(ioe)
+}
+```
+
+**for loops and expressions**
+
+Scala <code>for</code> loops - which we generally write in this book as for-loops - look like this:
+
+```
+for (arg <- args) println(args)
+
+//"x to y" sytax
+for (i <- 0 to 5) println(i)
+
+//"x to y" syntax
+for (i <- 0 to 5 by 2) println(i)
+```
+
+You can also add the <code>yield</code> keyword to for-loops to create _for-examples_ that yield a result. Here's a _for-expression_ that doubles each value in the sequence 1 to 5:
+
+```
+val x = for (i <- 1 to 5) yield i * 2
+```
+
+Here's another _for-expression_ that iterates over a list of strings:
+
+```
+val fruits = List("apple", "banana", "lime", "orange")
+
+val fruitLengths = for {
+    f <- fruit
+    if f.length > 4
+} yield f.length
+```
+
+Because Scala code generally just makes sense, we'll imagine that you can guess how this code works, even if you've never seen a for-expression or Scala list until now.
+
+**while and do/while**
+
+Scala also has <code>while</code> and <code>do</code>/<code>while</code> loops. Here's their general syntax:
+
+```
+//while loop
+while(condition){
+    statement(a)
+    statement(b)
+}
+
+//do-while
+do {
+    statement(a)
+    statement(b)
+}
+while(condition)
+```
+
+### Classes
+
+Here's an example of a Scala class:
+
+```
+class Person(var firstName: String, var lastName: String) {
+    def printFullName() = println(s"$firstName $lastName")
+}
+```
+
+This is how you use that class:
+
+```
+val p = new Person("Julia", "Kern")
+println(p.firstName)
+p.lastName="Manes"
+p.printFullName()
+```
+
+Notice that there's no need to create "get" and "set" methods to access the fields in the class.
+
+As a more complicated example, here's a <code>Pizza</code> class that you'll see later in the book:
+
+```
+clase Pizza (
+    var crustSize: CrustSize,
+    var crustType: CrusType,
+    val topping: ArrayBuffer[Topping]
+) {
+    def addTopping(t: Topping): Unit = topping += t
+    def removeTopping(t: Topping): Unit
+}
+```
+
+In that code, an <code>ArrayBuffer</code> is like Java's <code>ArrayList</code>. The <code>CrustSize</code>, <code>CrustType</code>, and <code>Topping</code> classes aren't shown, but you can probably understand how that code works without needing to see those classes.
+
+## Scala methods
+
+Just like other OOP languages, Scala classes have methods, and this is what the Scala method syntax looks like:
+
+```
+def sum(a: Int, b: Int): Int = a + b
+def concatenate(s1: String, s2: String): String = s1 + s2
+```
+
+You don't have to declare a method's return type, so it's perfectly legal to write those two methods like this, if you prefer:
+
+```
+def sum(a: Int, b: Int) = a + b
+def concatenate(s1: String, s2: String): s1 + s2
+```
+
+This is how you call those methods:
+
+```
+val x = sum(1, 2)
+val y = concatenate("foo", "bar")
+```
+
+## Traits
+
+Traits is Scala are a lot of fun, and they also let you break your code down into small, modular units. To demostrate traits, here's an example from later in the book. Given these three traits:
+
+```
+traits Speaker {
+    def speak(): String		// has no body, so it's abstract
+}
+
+trait TailWagger {
+    def startTail(): Unit = println("tail is wagging")
+    def stopTail(): Unit = println("tail is stopped")
+
+trait Runner {
+    def startRunning(): Unit = println("I'm running")
+    def stopRunning(): Unit = println("Stopped runnin")
+}
+```
+
+You can create a <code>Dog</code> class that extends all of those traits while providing behavior for t
