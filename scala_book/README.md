@@ -269,7 +269,7 @@ You don't have to declare a method's return type, so it's perfectly legal to wri
 ```
 def sum(a: Int, b: Int) = a + b
 def concatenate(s1: String, s2: String): s1 + s2
-```
+``` 
 
 This is how you call those methods:
 
@@ -297,4 +297,24 @@ trait Runner {
 }
 ```
 
-You can create a <code>Dog</code> class that extends all of those traits while providing behavior for 
+You can create a <code>Dog</code> class that extends all of those traits while providing behavior for the <code>speak</code>.
+
+```
+class Dog(name: String) extends Speaker with TailWagger with Runner {
+    def speak(): String = "Woof!"
+}
+```
+
+Similary, here's <code>Cat</code> class that shows how to override multiple trait methods:
+
+```
+class Cat extends Speaker with TailWagger with Runner {
+    def sepeak(): String = "Meow"  
+    override def startRunning(): Unit = println("Yeah ..., I don't run")
+    override def stopRunning(): Unit = println("No need to stop")
+}
+```
+
+If that code makes sense -great, you're comfortable with traits! If not, don't worry, we explain it in detail later in the book.
+
+### Collections classes
