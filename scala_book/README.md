@@ -335,7 +335,7 @@ val letters = ('a' to 'f' by 2).toList
 **Sequence methods**
 
 While there are many sequential collection classes you can use —  
-<code>Array</code>, <code>ArrayBuffer</code>, <code>Vector</code><code>List</code> class. Given these two lists:
+<code>Array</code>, <code>ArrayBuffer</code>, <code>Vector</code>, <code>List</code> class. Given these two lists:
 
 ```
 val nums = (1 to 10).toList
