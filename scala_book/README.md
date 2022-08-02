@@ -374,7 +374,7 @@ scala> val lessThanFive = nums.map(_ < 5)
 lessThanFive: List[Boolean] = List(true, true, true, true, false, false, false, false, false, false)
 ```
 
-If you're ready to see one of the most powerful collections methods, here's <code>foldLeft<code>:
+If you're ready to see one of the most powerful collections methods, here's <code>foldLeft</code>:
 
 ```
 scala> nums.foldLeft(0)(_ + _)
