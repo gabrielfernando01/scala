@@ -317,4 +317,94 @@ class Cat extends Speaker with TailWagger with Runner {
 
 If that code makes sense -great, you're comfortable with traits! If not, don't worry, we explain it in detail later in the book.
 
-### 
+### Collections classes
+
+If you're comming to Scala from Java and you're ready to really jump in and learn Scala, It's possible to use the Java collection classes in Scala, and some people do so for several weeks or months while getting comfortable with Scala. But it's highly recommended that you learn the basic Scala collections classes — <code>List</code>, <code>ListBuffer</code>, <code>Vector</code>, <code>ArrayBuffer</code>, <code>Map</code> and <code>Set</code> — as soon as posible. A great benefit of the Scala collections classes is that they offer many powerful methods that you'll want to start using as soon as possible to simplify your code.
+
+**Population lists**
+
+There are times when it's helpful to create sample list that are populated with data, and Scala offers many ways to populate list. Here are just a few:
+
+```
+val nums = List.range(0, 10)
+val nums = (1 to 10 by 2).toList
+val letters = ('a' to 'f').toList
+val letters = ('a' to 'f' by 2).toList
+```
+
+**Sequence methods**
+
+While there are many sequential collection classes you can use —  
+<code>Array</code>, <code>ArrayBuffer</code>, <code>Vector</code><code>List</code> class. Given these two lists:
+
+```
+val nums = (1 to 10).toList
+val names = List("joel", "ed", "chris", "maurice")
+```
+
+This is the <code>foreach</code> method:
+
+```
+scala> names.foreach(println)
+joel
+ed
+chris
+maurice
+```
+
+Here's the <code>filter</code> method, followed by <code>foreach</code>:
+
+```
+scala> nums.filter(_ < 4).foreach(println)
+1
+2
+3
+```
+
+Here are some examples of the <code>map</code> method:
+
+```
+scala> val doubles = nums.map(_ * 2)
+doubles: List[Int] = List(2, 4, 6, 8, 10, 12, 14, 16, 18, 20)
+
+scala> val capNames = names.map(_.capitalize)
+capNames: List[String] = List(Joel, Ed, Chris, Maurice)
+
+scala> val lessThanFive = nums.map(_ < 5)
+lessThanFive: List[Boolean] = List(true, true, true, true, false, false, false, false, false, false)
+```
+
+If you're ready to see one of the most powerful collections methods, here's <code>foldLeft<code>:
+
+```
+scala> nums.foldLeft(0)(_ + _)
+res0: Int = 55
+
+scala> nums.foldLeft(1)(_ * _)
+res1: Int = 3628800
+```
+
+### Tuples
+
+Tuples let you put a heterogenous collection of elements in a little container. A tuple can contain between two and 22 values, and all of the values can have different types. For example, this is a tuple that holds three different types, an <code>Int</code>, a <code>Double</code>, and a <code>String</code>:
+
+```
+(11, 11.0, "Eleven")
+```
+
+This is known as <code>Tuples3</code>, because it contains three elements.
+
+Tuples are convenient in many places, such as where you might use an ad-hoc class in other languages. For instance, you can return a tuple from a method instaed of returning a class.
+
+```
+def getAppInfo(): (String, BigDecimal, Long) = {
+    // get the stock symbol, price, and volume
+    ("APPI", BigDecimal(123.45), 1012023031)
+}
+```  
+
+Then you can assign the result of the method to a variable:
+
+```
+val t = getAapInfo()
+```
