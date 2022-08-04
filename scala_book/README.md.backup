@@ -335,7 +335,7 @@ val letters = ('a' to 'f' by 2).toList
 **Sequence methods**
 
 While there are many sequential collection classes you can use —  
-<code>Array</code>, <code>ArrayBuffer</code>, <code>Vector</code><code>List</code> class. Given these two lists:
+<code>Array</code>, <code>ArrayBuffer</code>, <code>Vector</code>, <code>List</code> class. Given these two lists:
 
 ```
 val nums = (1 to 10).toList
@@ -408,3 +408,41 @@ Then you can assign the result of the method to a variable:
 ```
 val t = getAapInfo()
 ```
+
+Once you have a tuple variable, you can access its values by number, preceded by an underscore:
+
+```
+t._1
+t._2
+t._3
+```
+
+The REPL demonstrates the results of accessing those fields:
+
+```
+scala> t._1
+res0: String = AAPL
+
+scala> t._2
+res1: scala.math.BigDecimal = 123.45
+
+scala> t._3
+res2: Long = 101202303
+```
+
+The values of a tuple can also be extracted using pattern matching. In this next example, the field inside the tuple are assigned to the variables <code>symbol</code>, <code>price</code>, and <code>volume</code>:
+
+```
+val (symbol, price, volume) = getAapInfo()
+```
+
+Once again, the REPL shows the result:
+
+```
+scala> val (symbol, price, volume) = getAapInfo()
+symbol: String = AAPL
+price: scala.math.BigDecimal = 123.45
+volume: Long = 101202303
+```
+
+Tuples are nice for those times when you want to quickly (and temporarily) group some things together. If you notice that
