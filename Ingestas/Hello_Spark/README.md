@@ -30,13 +30,13 @@ Y elegimios la opsción <code>Add Framework Support...</code> lo cual desplegara
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala/master/Ingestas/image/add_framework.png)
 
-Y lo anterior te genera una fichero <code>pompt.xlm</code> y unos ficheros como los que se muestran a la izquierda de la siguiente imagen:
+Y lo anterior te genera una fichero <code>pomp.xml</code> y varios directorios en el panel de la izquierda:
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala/master/Ingestas/image/pompt.png)
 
-En esta carpeta de GitHub te comparto el fichero [pompt.xlm](https://github.com/gabrielfernando01/scala/blob/main/Ingestas/Hello_Spark/pom.xml) el cual genera las dependencias a nuestro proyecto con Apache Spark, y como comente anteriormente señala la version de Scala que se esta ocupando <code>scala 2.11</code>.
+En esta carpeta de GitHub te comparto el fichero [pomp.xml](https://github.com/gabrielfernando01/scala/blob/main/Ingestas/Hello_Spark/pom.xml) el cual genera las dependencias a nuestro proyecto con Apache Spark, y como comente anteriormente señala la version de Scala que se esta ocupando <code>scala 2.11</code>.
 
-Copiamos dicho fichero que te comparto dentro del fichero <code>pompt.xml</code> de nuestro proyecto <code>HelloScala</code> y ejecutamos los cambios dando click en el siguiente icono:
+Copiamos dicho fichero que te comparto dentro del fichero <code>pomp.xml</code> de nuestro proyecto <code>HelloScala</code> y ejecutamos los cambios dando click en el siguiente icono:
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala/master/Ingestas/image/pompt.gif)
 
@@ -46,7 +46,7 @@ Y si hasta ahora todo lo hemos hecho bien deberás obtener varias librerias exte
 
 ## Marcar el directorio main como «Source Root».
 
-Para este proyecto no será necesario agregar más configuraciones al fichero <code>pom.xml</code> aunque es importante saber para tus futuros proyectos. Que si quieres crear dependencias con otras aplicaciones como <code>Kubernetes</code>, <code>Docker</code>, <code>Cassandra</code>, etc. Estas son muy sencillas de hacer, agregando dichas líneas de codigo <code>xml</code> al <code>pomp</code>, en Google puedes encontrar infinidad de ficheros _pomp.xml_ para cada dependencia necesaria.
+Para este proyecto no será necesario agregar más configuraciones al fichero <code>pom.xml</code> aunque es importante saber para tus futuros proyectos. Que si quieres crear dependencias con otras aplicaciones como: <code>Kubernetes</code>, <code>Docker</code>, <code>Cassandra</code>, etc. Estas son muy sencillas de hacer, agregando dichas líneas de codigo <code>xml</code> al <code>pomp.xml</code>. En Google hay infinidad de ficheros _pomp.xml_ para cada dependencia necesaria.
 
 En nuestro panel de directorios de lado izquierdo tenemos un carpeta llamada <code>src</code> que por delante tiene otra llamada <code>main</code> y dos mas adelante llamadas <code>java</code> y <code>resources</code>. A continuación eliminamos las dos carpetas: **java** y **resources**.
 
@@ -60,7 +60,7 @@ Ahora damos click derecho sobre la carpeta <code>main</code> y elegimos la opci�
 
 Ahora estamos listo para crear nuestro objeto clase, lo siguiente debe generar un fichero Main.scala que tu puedes nombrar como gustes, en mi caso le doy ese nombre, esta clase es equivalente a lo que hacemos en Java al declara el famoso «public static void main(String[] args)», es decir, le estamos indicando a nuestro proyecto en que punto debe empezar a ejecutar el código. También es importante saber que el método <code>main</code> de **Java** en **Scala** se escribe como <code>Unit</code> como verás a continuación:
 
-![](https://raw.githubusercontent.com/gabrielfernando01/scala/master/Ingestas/image/object_main.png)
+![](https://raw.githubusercontent.com/gabrielfernando01/scala/master/Ingestas/image/object_main.gif)
 
 Los pasos que se siguen en el gif anterior son: botón derecho sobre la carpeta <code>main</code> enseguida elegimos Scala Class > Object, di por nombre «Main»(cualquier otro es válido) y pulsamos <code>Enter</code>.
 
