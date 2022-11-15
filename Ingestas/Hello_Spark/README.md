@@ -73,12 +73,12 @@ Por último recuerda que Apache Spark tiene dos tipos de funciones:
 - Transformaciones
 - Acciones
 
-Por lo que es bueno que distingas en este primer ejercicio cuales son cada una de ellas. Lo único que resta es ejecutar el función <code>main</code> de la que hay diversas maneras, una de ellas es dando click en el botón <code>Play<code>.
+Por lo que es bueno que distingas en este primer ejercicio cuales son cada una de ellas. Lo único que resta es ejecutar el función <code>main</code> de la que hay diversas maneras, una de ellas es dando click en el botón <code>Play</code>.
 
-![](https://raw.githubusercontent.com/gabrielfernando01/scala/master/Ingestas/image/play.gif)
+![](https://raw.githubusercontent.com/gabrielfernando01/scala/master/Ingestas/image/play.png)
 
 El resultado en el compilador debe ser el siguiente:
 
-![](https://raw.githubusercontent.com/gabrielfernando01/scala/master/Ingestas/image/compilador.gif)
+![](https://raw.githubusercontent.com/gabrielfernando01/scala/master/Ingestas/image/compilador.png)
 
 Si pudiste ejecutar el código, **¡Felicidades!** has hecho tu primera conexión con Maven y el framework Apache Sapark.
