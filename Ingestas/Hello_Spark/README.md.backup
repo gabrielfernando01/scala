@@ -60,7 +60,7 @@ Ahora damos click derecho sobre la carpeta <code>main</code> y elegimos la opci�
 
 Ahora estamos listo para crear nuestro objeto clase, lo siguiente debe generar un fichero Main.scala que tu puedes nombrar como gustes, en mi caso le doy ese nombre, esta clase es equivalente a lo que hacemos en Java al declara el famoso «public static void main(String[] args)», es decir, le estamos indicando a nuestro proyecto en que punto debe empezar a ejecutar el código. También es importante saber que el método <code>main</code> de **Java** en **Scala** se escribe como <code>Unit</code> como verás a continuación:
 
-![](https://raw.githubusercontent.com/gabrielfernando01/scala/master/Ingestas/image/object_main.png)
+![](https://raw.githubusercontent.com/gabrielfernando01/scala/master/Ingestas/image/object_main.gif)
 
 Los pasos que se siguen en el gif anterior son: botón derecho sobre la carpeta <code>main</code> enseguida elegimos Scala Class > Object, di por nombre «Main»(cualquier otro es válido) y pulsamos <code>Enter</code>.
 
