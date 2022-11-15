@@ -38,7 +38,7 @@ En esta carpeta de GitHub te comparto el fichero [pomp.xml](https://github.com/g
 
 Copiamos dicho fichero que te comparto dentro del fichero <code>pomp.xml</code> de nuestro proyecto <code>HelloScala</code> y ejecutamos los cambios dando click en el siguiente icono:
 
-![](https://raw.githubusercontent.com/gabrielfernando01/scala/master/Ingestas/image/new_pomp.gif)
+![](https://raw.githubusercontent.com/gabrielfernando01/scala/master/Ingestas/image/new_pomp.png)
 
 Y si hasta ahora todo lo hemos hecho bien deberás obtener varias librerias externas como se muestra en seguida:
 
