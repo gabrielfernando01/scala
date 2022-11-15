@@ -1,4 +1,4 @@
-# Datio
+# Ingestas
 ## Introducción a Big Data e ingestas.
 
 En este directorio se busca dar a entender cuales son los elementos básicos y necesarios para iniciar un proyecto con Apache Spark y el lenguaje de programación <code>Scala</code>.
