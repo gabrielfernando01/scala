@@ -24,7 +24,7 @@ La ventana que tiene que aparecer debe ser la siguiente, a continuación damos c
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala/master/Ingestas/image/pantalla_inicial.png)
 
-Y elegimios la opsción <code>Add Framework Support...</code> lo cual desplegara la siguiente ventana donde activaremos el check de <code>Maven<code>, debes saber que este paso es que habilita el servidor, dado que la arquitectura de Apache Spark cuando deje de funcionar en nuestra maquina <code>local</code> pasará a vivir en un cluster.
+Y elegimios la opsción <code>Add Framework Support...</code> lo cual desplegara la siguiente ventana donde activaremos el check de <code>Maven</code>, debes saber que este paso es que habilita el servidor, dado que la arquitectura de Apache Spark cuando deje de funcionar en nuestra maquina <code>local</code> pasará a vivir en un cluster.
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala/master/Ingestas/image/add_framework.png)
 
