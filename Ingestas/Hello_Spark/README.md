@@ -6,7 +6,7 @@ Habiendo hecho las instalaciones necesarias, iniciamos abriendo nuestro IDE Inte
 
 Al abrirlo encontrarás una ventana similar a la siguiente, puede variar dependiendo de la version que hayas instalado.
 
-![](https://raw.githubusercontent.com/gabrielfernando01/scala/master/Datio/image/plugins.png)
+![](https://raw.githubusercontent.com/gabrielfernando01/scala/master/Ingestas/image/plugins.png)
 
 Para este primer proyecto <code>HelloScala</code> necesitas tener instalado el plugin de <code>Scala</code> y el plugin <code>Maven</code>, aunque dependiendo de tus necesidades en un futuro tendrás que instalar otros.
 
@@ -20,18 +20,22 @@ Nos abrira una ventana de configuaración, aqui es importante empezar a comentar
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala/master/Ingestas/image/configuration_hello.png)
 
-La ventana que tiene que aparecer debe ser la siguiente:
+La ventana que tiene que aparecer debe ser la siguiente, a continuación damos click derecho sobre el proyecto <code>HelloScala</code> en la parte superior izquierda, en el panel de los ficheros de nuestro proyecto:
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala/master/Ingestas/image/pantalla_inicial.png)
 
-Lo primero que hay que hacer para dar forma a nuestro proyecto Apache Spark es dar click derecho en el proyecto que en este caso es <code>HelloScala</code> y elegir la opción <code>Add Framework</code> donde seleccionaremos la opción <code>Maven</code> como se muestra en la siguiente imagen:
+Y elegimios la opsción <code>Add Framework Support...</code> lo cual desplegara la siguiente ventana donde activaremos el check de <code>Maven<code>, debes saber que este paso es que habilita el servidor, dado que la arquitectura de Apache Spark cuando deje de funcionar en nuestra maquina <code>local</code> pasará a vivir en un cluster.
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala/master/Ingestas/image/add_framework.png)
 
-Lo cual te genera una fichero <code>pompt.xlm</code> y unos ficheros como los que se muestran a la izquierda de la siguiente imagen:
+Y lo anterior te genera una fichero <code>pompt.xlm</code> y unos ficheros como los que se muestran a la izquierda de la siguiente imagen:
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala/master/Ingestas/image/pompt.png)
 
-En esta carpeta de GitHub te comparto el fichero [pompt.xlm](https://github.com/gabrielfernando01/scala/blob/main/Datio/Hello_Spark/pom.xml) el cual genera las dependencias a nuestro proyecto con Apache Spark, y como comente anteriormente señala la version de Scala que se esta ocupando <code>scala 2.11</code>
+En esta carpeta de GitHub te comparto el fichero [pompt.xlm](https://github.com/gabrielfernando01/scala/blob/main/Ingesta/Hello_Spark/pom.xml) el cual genera las dependencias a nuestro proyecto con Apache Spark, y como comente anteriormente señala la version de Scala que se esta ocupando <code>scala 2.11</code>.
+
+Copiamos dicho fichero que te comparto dentro del fichero <code>pompt.xml</code> de nuestro proyecto <code>HelloScala</code> y ejecutamos los cambios dando click en el siguiente icono:
+
+![](https://raw.githubusercontent.com/gabrielfernando01/scala/master/Ingestas/image/pompt.gif)
 
 
