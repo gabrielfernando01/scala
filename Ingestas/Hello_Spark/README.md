@@ -66,7 +66,7 @@ Los pasos que se siguen en el gif anterior son: botón derecho sobre la carpeta 
 
 ## Ejecutar la función main
 
-Finalmete tenemos todos los elementos necesarios para crear una conexión Maven con Apache Spark, ahora basta con copiar y pegar el código [Main.scala](https://github.com/gabrielfernando01/scala/blob/main/Ingestas/Hello_Spark/Main.scala) en tu panel derecho y ejecutarlo. Aunque te recomiendo que lo hagas por bloques y revises que se esta haciendo para que comprendas las funcionalidades de Spark.
+Finalmete tenemos todos los elementos necesarios para crear una conexión Maven con Apache Spark, ahora basta con copiar y pegar el código [Main.scala](https://github.com/gabrielfernando01/scala/blob/main/Ingestas/Hello_Spark/Main.scala) en tu panel derecho y ejecutarlo. Aunque te recomiendo que lo hagas por bloques y revises que se estas haciendo para que comprendas las funcionalidades de Spark.
 
 Por último recuerda que Apache Spark tiene dos tipos de funciones:
 
