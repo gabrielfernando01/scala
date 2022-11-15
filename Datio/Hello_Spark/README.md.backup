@@ -8,12 +8,21 @@ Al abrirlo encontrarás una ventana similar a la siguiente, puede variar dependi
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala/master/Datio/image/plugins.png)
 
-Para este primer proyecto <code>HelloScala</code> solo necesitas tener instalado el plugin de <code>Scala</code>, aunque dependiendo de tus necesidades en un futuro tendrás que instalar otros.
+Para este primer proyecto <code>HelloScala</code> necesitas tener instalado el plugin de <code>Scala</code> y el plugin <code>Maven</code>, aunque dependiendo de tus necesidades en un futuro tendrás que instalar otros.
+
+![](https://raw.githubusercontent.com/gabrielfernando01/scala/master/Datio/image/plugin_maven.png)
 
 Ahora damos click en Project en seguida a <code>New Proyect</code>:
 
 ![](https://raw.githubusercontent.com/gabrielfernando01/scala/master/Datio/image/new_project.png)
 
-Nos abrira una ventana de configuaración, aqui es importante empezar a comentar que es un fichero <code>pompt.xml<code>. De manera simplista podemos decir que es una plantilla que tendrá las configuraciones de nuestro proyecto, y dado que el fichero que se encuentra en esta carpeta trae la la version <code>scala 2.11</code> en el _pompt.xml_ esa es la que tenemos que elegir, aunque si cambias el <code>pompt.xml</code> basta con cambiarlo en la siguiente ventana:
+Nos abrira una ventana de configuaración, aqui es importante empezar a comentar que es un fichero <code>pompt.xml</code>. De manera simplista podemos decir que es una plantilla que tendrá las configuraciones de nuestro proyecto, y dado que el fichero que se encuentra en esta carpeta trae la la version <code>scala 2.11</code> en el _pompt.xml_ esa es la que tenemos que elegir, aunque si cambias el <code>pompt.xml</code> basta con cambiarlo en la siguiente ventana:
 
-![](https://raw.githubusercontent.com/gabrielfernando01/scala/master/Datio/image/configuration_he.png)
+![](https://raw.githubusercontent.com/gabrielfernando01/scala/master/Datio/image/configuration_hello.png)
+
+Lo primero que hay que hacer para dar forma a nuestro proyecto Apache Spark es dar click derecho en el proyecto que en este caso es <code>HelloScala</code> y elegir la opción <code>Add Framework</code> donde seleccionaremos la opción <code>Maven</code> como se muestra en la siguiente imagen:
+
+![](https://raw.githubusercontent.com/gabrielfernando01/scala/master/Datio/image/add_framework.png)
+
+Lo cual te tendrá que generar una fichero <code>pompt.xlm</code> y unos ficheros como los que se muestran a la izquierda de la siguiente imagen:
+
