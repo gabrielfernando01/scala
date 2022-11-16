@@ -1,10 +1,10 @@
-# Mi primera conexión con Maven usando IntelliJ Idea
+# Como arrancar el Driver de Spark en IntelliJ IDEA.
 
 ***
-La intención de este documento es crear nuestro **primer proyecto desde cero** para hacer una conexión al servidor Maven y escribir código en el framework Apache Spark usando el IDE **IntelliJ Idea**.
+La intención de este documento es crear nuestro **primer proyecto desde cero** para ejecutar el Driver de Spark en formato standalone(local) desde IntelliJ apoyandose en herramienta de construcción de Java Apache Maven.
 ***
 
-Habiendo hecho las instalaciones necesarias, iniciamos abriendo nuestro IDE IntelliJ Idea, en mi caso tengo la versión 2022 y puedes usar versiones anteriores para ejecutar este ejercicio.
+Abrimos el IDE IntelliJ IDEA, en mi caso tengo la versión 2022, aunque puedes usar versiones anteriores para realizar este ejercicio.
 
 Al abrirlo encontrarás una ventana similar a la siguiente, puede variar dependiendo de la version que hayas instalado.
 
