@@ -40,7 +40,11 @@ Ejemplo <code>condicional.scala</code>:
 ```
 val k = 10
 
-println(if (k == 10) "k vale 10" else "k no vale 10")
+if (n == 10) {
+	println("n es igual a diez")
+} else {
+	println("n no es igual a diez")
+}
 ```
 
 #### Un caso sencillo de MATCH
