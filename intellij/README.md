@@ -99,7 +99,7 @@ object Main extends App {
 1. From the **Run** menu, select **Edit configurations**
 2. Click the **+** button and select **sbt Task**
 3. Name it <code>Run the program</code>.
-4. In the **Task** field, type <code>~run</code>. The <code>~</code> causes sbt to rebuild and rerun the project when you save changes to a file in the project.
+4. In the **Task** field, type <code>\~run</code>. The <code>\~</code> causes sbt to rebuild and rerun the project when you save changes to a file in the project.
 5. Click **OK.**
 6. On the **Run** menu click **Run 'Run the program'.**
 7. In the code, change <code>75</code> to <code>61</code> and look at the updated output in the console.
