@@ -90,7 +90,7 @@ sbt creates many directories which can be useful once you start building more co
 ```
 object Main extends App {
     val ages = Seq(42, 75, 29, 64)
-    println(s"The oldest person is $(ages.max)")
+    println(s"The oldest person is ${ages.max}")
 }
 ```
 
