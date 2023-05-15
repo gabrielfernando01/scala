@@ -5,7 +5,7 @@
 El tipo mapa en Scala nos permite convertir el contenido de una lista en otro. Pensemos que tenemos una lista de números y que a partir de ella queremos obtener otra con el doble de cada elemento.
 
 ```
-val numeros = List(3, 5, 12, 4)
+val numeros = list(3, 5, 12, 4)
 
 
 numeros.map{ x => 2 * x}
