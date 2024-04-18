@@ -2,7 +2,7 @@
 
 # Scala languange programming
 
-Este repositorio trata de los primeros pasos en Scala, los ejemplos que se exponen tienen como recursos.
+En este repositorio trata de los primeros pasos en Scala, los ejemplos que se exponen tienen como recursos.
 
 - Scala 2.13.4
 - Itellij IDEA
