@@ -1,6 +1,6 @@
-![](https://raw.githubusercontent.com/gabrielfernando01/scala/main/images/cover.png)
+![](https://raw.githubusercontent.com/gabrielfernando01/scala/main/ingestas/images/cover.png)
 
-# Tutorial point-to-point: Ingestas de ficheros JSON con Spark-Scala en IntelliJ IDEA usando Maven.
+# Ingestas de ficheros JSON con Spark-Scala en IntelliJ IDEA usando Maven 🪶.
 
 Para crear el siguiente proyecto te comparto los recursos de mi ordenador para configurar correctamente el proyecto.
 
