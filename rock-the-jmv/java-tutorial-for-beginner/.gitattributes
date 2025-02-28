@@ -1,0 +1,8 @@
+# Asegura que los archivos Scala y Java sean contados como código
+*.scala linguist-detectable=true
+*.java linguist-detectable=true
+
+# Excluye directorios comunes que podrían interferir
+target/* linguist-vendored=true
+vendor/* linguist-vendored=true
+*.class linguist-generated=true
