@@ -21,13 +21,13 @@ public class Main {
         char aDigitCharacter = '5';     // don't confuse '1' whith 1
         boolean aTruthValue = true;
 
-        // string
+        // string are REFERENCE TYPES
         String aString = "I love Java!";
 
         // expression
         // math operations
         int multiplyInt = 2 * 3;
-        int divideInt = 7 / 3;  // onlu the quotient is kept for int division
+        int divideInt = 7 / 3;  // only the quotient is kept for int division
         int remainderInt = 7 % 3; // the remainder of the division
 
         // incrementing and decrementing
@@ -94,7 +94,7 @@ public class Main {
         }
 
         // while loops: test conditions, then execute
-        System.out.println("Watch me cout to 10!");
+        System.out.println("Watch me count to 10!");
         int counter = 1;
 
         while (counter <= 10) {
@@ -129,15 +129,20 @@ public class Main {
 
         // reference type
         // instantiate: create a instance of a class
-        Person alice = new Person();    // alice is an INSTANCE of Person
-        alice.username = "Alice";
-        alice.age = 25;
-        Person bob = new Person(); // bob is an INSTANCE of Person
-        bob.username = "Bob";
-        bob.age = 24;
+        Person alice = new Person("Alice",25);    // alice is an INSTANCE of Person
+        Person bob = new Person("Bob",24); // bob is an INSTANCE of Person
         System.out.println(
-                alice.username + " say to " + bob.username + ": happy birthday for turning " + bob.age + "!"
+                        alice.username + " say to " + bob.username
+                        + ": happy birthday for turning " + bob.age + "!"
         );
+
+        // Alice birthday
+        alice.celebrateBirthday();
+        // Bob birthday
+        bob.celebrateBirthday();
+
+        String alicesParty = alice.throwParty(20, "my house");
+        System.out.println(alicesParty);
     }
 }
 
@@ -145,4 +150,26 @@ class Person {  // REFERENCES TYPE
     // fields; pieces of information attached to a single type
     String username;
     int age;
+
+    // CONSTRUCTOR: used to initialize fields
+    public Person(String username, int age) {
+        this.username = username;
+        this.age = age;
+    }
+
+    // methods: pieces of INFORMATION attached to a singular type
+    void celebrateBirthday() {
+        this.age++;
+        System.out.println(
+                    this.username
+                    + " says: It's my birthday, I just turned "
+                    + this.age
+        );
+    }
+
+    String throwParty(int nPeople, String favoritePlace) {
+        return  this.username + " says: I'm going to throw a party at"
+                + favoritePlace + " and I'm going to invite " + nPeople
+                + " people!";
+    }
 }
