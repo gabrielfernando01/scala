@@ -143,6 +143,12 @@ public class Main {
 
         String alicesParty = alice.throwParty(20, "my house");
         System.out.println(alicesParty);
+
+        // all references types (classes) can have methods
+        String aTestString = "I love Java!";
+        System.out.println(aTestString.length());   // # of characters
+        System.out.println(aTestString.startsWith("I love"));
+        System.out.println(aTestString.substring(2, 7));
     }
 }
 
@@ -168,8 +174,17 @@ class Person {  // REFERENCES TYPE
     }
 
     String throwParty(int nPeople, String favoritePlace) {
-        return  this.username + " says: I'm going to throw a party at"
-                + favoritePlace + " and I'm going to invite " + nPeople
-                + " people!";
+        String throwAParty = this.username + " says: I'm going to throw a party at"
+                + favoritePlace;
+        String invitePeople = "I'm going to invite " + nPeople + " people!";
+        // write any code you like!
+        return  throwAParty + " and" + invitePeople;
     }
+    /*
+    returnType methodName(argument) {
+        any code
+
+        return single value
+    }
+     */
 }
