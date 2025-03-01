@@ -149,6 +149,14 @@ public class Main {
         System.out.println(aTestString.length());   // # of characters
         System.out.println(aTestString.startsWith("I love"));
         System.out.println(aTestString.substring(2, 7));
+
+        // arrays
+        Person charlie = new Person("Cahrlie", 34);
+        // a million other people
+        Person[] peopleCelebratingToday = new Person[3];
+        peopleCelebratingToday[0] = alice;
+        peopleCelebratingToday[1] = bob;
+        peopleCelebratingToday[2] = charlie;
     }
 }
 
