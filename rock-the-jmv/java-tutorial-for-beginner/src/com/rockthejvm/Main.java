@@ -150,13 +150,34 @@ public class Main {
         System.out.println(aTestString.startsWith("I love"));
         System.out.println(aTestString.substring(2, 7));
 
+        Person charlie = new Person("Charlie", 34);
+
         // arrays
-        Person charlie = new Person("Cahrlie", 34);
-        // a million other people
-        Person[] peopleCelebratingToday = new Person[3];
+        Person[] peopleCelebratingToday = new Person[3];    // allocate space for 3 Person references
         peopleCelebratingToday[0] = alice;
         peopleCelebratingToday[1] = bob;
         peopleCelebratingToday[2] = charlie;
+
+        int personIndex = 0;
+        while (personIndex < peopleCelebratingToday.length) {
+            Person currentPerson = peopleCelebratingToday[personIndex];
+            currentPerson.celebrateBirthday();
+            personIndex++;
+        }
+
+        // same thing with a for loop
+        for (int i = 0; i < peopleCelebratingToday.length; i++) {
+            Person currentPerson = peopleCelebratingToday[i];
+            currentPerson.celebrateBirthday();
+        }
+
+        // foreach loop
+        for (Person person: peopleCelebratingToday) {
+            person.celebrateBirthday();
+        }
+
+        // static members and methods
+        boolean peopleCanFly = Person.canFly;
     }
 }
 
@@ -164,6 +185,7 @@ class Person {  // REFERENCES TYPE
     // fields; pieces of information attached to a single type
     String username;
     int age;
+    static boolean canFly = false;
 
     // CONSTRUCTOR: used to initialize fields
     public Person(String username, int age) {
