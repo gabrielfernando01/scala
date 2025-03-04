@@ -7,7 +7,7 @@ public class Chatbot {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Hi, I'm Rock, the chatbot your progrmmed.");
+        System.out.println("Hi, I'm Rock, the chatbot your programmed.");
         System.out.println("May I know your name?");
 
         String name = scanner.nextLine();
@@ -37,7 +37,14 @@ public class Chatbot {
         if (age == 0) {
             System.out.println("Error: Invalid age");
         } else {
-            System.out.println("Based on your provided remainders, You should be " + age + " years old.");
+            System.out.println("Based on your provided remainders, You should be " + age + ": perfect time to learn Java!");
         }
+
+        System.out.println("I can count really fast! Wanna see? Give me a number:");
+        int limit = scanner.nextInt();
+        for (int i = 1; i <= limit; i++) {
+            System.out.println(i);
+        }
+        System.out.println("DOne! See I how fast I was? Going to end the chat now, Have fun!");
     }
 }

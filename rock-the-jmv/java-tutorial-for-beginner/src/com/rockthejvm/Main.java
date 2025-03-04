@@ -19,7 +19,7 @@ public class Main {
         double aStarsInUniverse = 1.1e21;    // 1.1 * 10^21
         double hydrogenRadius = 5.3e-11; // 5.3 * 10^-11
         char aCharacter = 'v';
-        char aDigitCharacter = '5';     // don't confuse '1' whith 1
+        char aDigitCharacter = '5';     // don't confuse '1' with 1
         boolean aTruthValue = true;
 
         // string are REFERENCE TYPES
