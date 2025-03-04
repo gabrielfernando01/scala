@@ -1,6 +1,7 @@
 package com.rockthejvm;
 
 public class Main {
+    // method signature = access modifier + (static) + return type + method name + list of arguments
     public static void main(String[] args) {
         System.out.println("I'm learning Java!");
 
@@ -178,6 +179,12 @@ public class Main {
 
         // static members and methods
         boolean peopleCanFly = Person.canFly;
+        String peopleProgrammingLanguage = Person.getFavoriteProgrammingLanguage();
+        System.out.println(peopleProgrammingLanguage);
+
+        // acccess modifiers
+        // System.out.println(secret);  // <-- compiler error, secret is private
+
     }
 }
 
@@ -186,6 +193,9 @@ class Person {  // REFERENCES TYPE
     String username;
     int age;
     static boolean canFly = false;
+    // private = ACCESS MODIFIER
+    // other access modifiers: public, protected (no modifier = access inside package)
+    private String secret = "nobody needs to know this";
 
     // CONSTRUCTOR: used to initialize fields
     public Person(String username, int age) {
@@ -217,4 +227,8 @@ class Person {  // REFERENCES TYPE
         return single value
     }
      */
+
+    static String getFavoriteProgrammingLanguage() {
+        return "Java";
+    }
 }
