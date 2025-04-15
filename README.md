@@ -34,14 +34,14 @@ Cambiamos de directorio para ejecutar el script:
 
 ```
 $ cd /opt/idea/ideIC-*/bin
-prompt:/opt/idea/bin$ sh idea.sh 
+:/opt/idea/bin$ sh idea.sh 
 ```
 
 Para asignarle el lanzador, debes entrar a <code>setting</code> y eligen <code>Desktop entry</code>.
 
 ## Pluggin para Scala 🟥 y SBT Ejecutor 🔌,
 
-Entra a <code>settings</code> posteriormente a <code>Pluggins</code>, es decir, Settting > Pluggins. Ahí se instalan tanto el puggin de Scala como el interprete SBT Ejecutor.
+Entra a <code>settings</code> posteriormente a <code>Pluggins</code>, es decir, Settting > Pluggins. Ahí se instalan tanto el pluggin de Scala 🟥 como el interprete SBT Ejecutor.
 
 ### Configurar y hacer nuestro primer «Hello world!».
 
