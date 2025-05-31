@@ -34,3 +34,5 @@ object ObjectOrientation extends App {
     def eat(animal: Animal): Unit
   }
 }
+
+// System.out.println("Hello, world!");
