@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/gabrielfernando01/scala/main/basics_scala/rock-the-jmv/image/cover.png)
+![](https://raw.githubusercontent.com/gabrielfernando01/scala/main/basics_scala/rock-the-jvm/image/cover.png)
 
 # Scala at Light Speed
 
