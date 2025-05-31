@@ -4,3 +4,4 @@
 
 ## OOP in Scala
 
+![](https://raw.githubusercontent.com/gabrielfernando01/scala/main/basics_scala/rock-the-jvm/image/Animal.png)
