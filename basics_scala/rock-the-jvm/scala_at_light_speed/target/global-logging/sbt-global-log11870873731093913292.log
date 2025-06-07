@@ -1,0 +1,107 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(early(addDefaultCommands), None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(addDefaultCommands, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(early(initialize), None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(initialize, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(early(addPluginSbtFile="""/tmp/idea.sbt"""), None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(addPluginSbtFile="""/tmp/idea.sbt""", None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(boot, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(writeSbtVersion, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(reload, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtStashOnFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(onFailure loadFailed, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(loadp, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mwelcome to sbt 1.10.7 (Ubuntu Java 11.0.27)[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.defaultLoad until apply took 752.164665ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: plugins took 390.893487ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: defsScala took 4.280746ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory /home/gabriel/Documents/de/scala/basics_scala/rock-the-jvm/scala_at_light_speed/project[0m
+[0m[[0m[0mdebug[0m] [0m[0m            Load.loadUnit: mkEval took 33.879863ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found non-root projects [0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /home/gabriel/Documents/de/scala/basics_scala/rock-the-jvm/scala_at_light_speed/project, returning: ()[0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 40.127991 ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project scala_at_light_speed-build from idea.sbt...[0m
+[0m[[0m[0mdebug[0m] [0m[0m              Load.resolveProject(scala_at_light_speed-build) took 86.1165ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m            Load.loadTransitive: finalizeProject(Project(id scala_at_light_speed-build, base: /home/gabriel/Documents/de/scala/basics_scala/rock-the-jvm/scala_at_light_speed/project, plugins: List(<none>))) took 152.673176ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /home/gabriel/Documents/de/scala/basics_scala/rock-the-jvm/scala_at_light_speed/project, returning: (scala_at_light_speed-build)[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: loadedProjectsRaw took 9175.261273ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: cleanEvalClasses took 21.171581ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m        Load.loadUnit(file:/home/gabriel/Documents/de/scala/basics_scala/rock-the-jvm/scala_at_light_speed/project/, ...) took 9604.930518ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: load took 10029.432649ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: resolveProjects took 17.918665ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: finalTransforms took 185.097377ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: config.delegates took 27.334923ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: Def.make(settings)... took 1485.078075ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: structureIndex took 359.677903ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: mkStreams took 4.212093ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading project definition from /home/gabriel/Documents/de/scala/basics_scala/rock-the-jvm/scala_at_light_speed/project[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: plugins took 17703.724481ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: defsScala took 0.004819ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory /home/gabriel/Documents/de/scala/basics_scala/rock-the-jvm/scala_at_light_speed[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadUnit: mkEval took 0.218738ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found root project root w/ remaining [0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(org.jetbrains.sbt.StructurePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(org.jetbrains.sbt.IdeaShellPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.StructurePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.IdeaShellPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(And(Set(Atom(sbt.plugins.CorePlugin), Atom(sbt.plugins.JvmPlugin))),Set(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.SemanticdbPlugin,org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin,sbt.plugins.JUnitXmlReportPlugin,org.jetbrains.sbt.IdeaShellPlugin,org.jetbrains.sbt.StructurePlugin,sbt.plugins.MiniDependencyTreePlugin)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 4.100909 ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project root from build.sbt...[0m
+[0m[[0m[0mdebug[0m] [0m[0m        Load.resolveProject(root) took 57.148595ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadTransitive: finalizeProject(Project(id root, base: /home/gabriel/Documents/de/scala/basics_scala/rock-the-jvm/scala_at_light_speed, plugins: List(<none>))) took 64.150151ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /home/gabriel/Documents/de/scala/basics_scala/rock-the-jvm/scala_at_light_speed, returning: (root)[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: loadedProjectsRaw took 2219.09391ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: cleanEvalClasses took 2.458701ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.loadUnit(file:/home/gabriel/Documents/de/scala/basics_scala/rock-the-jvm/scala_at_light_speed/, ...) took 19926.886825ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: load took 20060.824692ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: resolveProjects took 0.129482ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: finalTransforms took 90.73011ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: config.delegates took 0.412612ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: Def.make(settings)... took 329.969296ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: structureIndex took 132.532997ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: mkStreams took 0.006774ms[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to scala_at_light_speed (in build file:/home/gabriel/Documents/de/scala/basics_scala/rock-the-jvm/scala_at_light_speed/)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtPopOnFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(notifyUsersAboutShell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(iflast shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(; set ideaPort in Global := 37821 ; idea-shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(set ideaPort in Global := 37821, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mDefining Global / ideaPort[0m
+[0m[[0m[0minfo[0m] [0m[0mThe new value will be used by Compile / compile, Test / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mDefining [0m
+[0m[[0m[0mdebug[0m] [0m[0m	Global / ideaPort[0m
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe new value will be used by [0m
+[0m[[0m[0mdebug[0m] [0m[0m	Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Test / compile[0m
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to scala_at_light_speed (in build file:/home/gabriel/Documents/de/scala/basics_scala/rock-the-jvm/scala_at_light_speed/)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m
